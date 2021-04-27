@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "web api for WSB",
   "main": "dist/app.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "node dist/app.js",
     "dev": "ts-node-dev src/app.ts",
