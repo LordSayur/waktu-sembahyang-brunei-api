@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node dist/app.js",
     "dev": "ts-node-dev src/app.ts",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "postinstall": "npm run build"
   },
   "keywords": [
     "wsb",
