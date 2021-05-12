@@ -7,19 +7,16 @@ const port = 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get(
-    "/",
-    async (req: Request, res: Response): Promise<Response> => {
-        return res.status(200).send({
-            message: "Assalamualaikum dari WSB 🌙",
-        });
-    }
-);
+app.get("/", async (req: Request, res: Response): Promise<Response> => {
+  return res.status(200).send({
+    message: "Assalamualaikum dari WSB 🌙",
+  });
+});
 
 try {
-    app.listen(port, (): void => {
-        console.log(`Connected successfully on port ${port}`);
-    });
+  app.listen(port, (): void => {
+    console.log(`Connected successfully on port ${port}`);
+  });
 } catch (error) {
-    console.error(`Error occurred: ${error.message}`);
+  console.error(`Error occurred: ${error.message}`);
 }
